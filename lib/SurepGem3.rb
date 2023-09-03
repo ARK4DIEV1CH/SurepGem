@@ -1,4 +1,4 @@
-require "SurepGem3/version"
+#require "SurepGem3/version"
 
 module SurepGem3
   class KitchenConvector
