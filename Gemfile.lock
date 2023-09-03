@@ -1,19 +1,17 @@
 PATH
   remote: .
   specs:
-    SurepGem (0.1)
+    SurepGem3 (0.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (13.0.6)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  SurepGem!
-  rake (~> 13.0)
+  SurepGem3!
 
 BUNDLED WITH
-   2.4.15
+   2.4.19
