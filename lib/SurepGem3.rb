@@ -1,14 +1,26 @@
 require "SurepGem3/version"
 
 module SurepGem3
-  class Convector
+  class KitchenConvector
 
-    def GramsToKg(grams)
-      grams / 1000
+    def GramsToKg(unit)
+      unit / 1000
     end
-    def kgToGrams(kg)
-      kg*1000
+    def kgToGrams(unit)
+      unit*1000
     end
-    #mouse
+
+    def LitersOfWaterToGrams(unit)
+      unit * 1000
+    end
+
+    def GramsToLitersOfWater(unit)
+      unit / 1000
+    end
+
+    def LitersOfWaterToMililiters(unit)
+      unit * 1000
+    end
+
   end
 end
