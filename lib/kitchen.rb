@@ -2,7 +2,7 @@
 
 module SurepGem3
 
-  class KitchenConvector
+  class Kitchen
 
     def GramsToKg(unit)
       unit / 1000
