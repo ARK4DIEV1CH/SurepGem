@@ -1,6 +1,7 @@
 #require "SurepGem3/version"
 
 module SurepGem3
+
   class KitchenConvector
 
     def GramsToKg(unit)
