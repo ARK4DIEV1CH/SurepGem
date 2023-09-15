@@ -1,4 +1,4 @@
-#require "SurepGem3/version"
+
 module SurepGem3
   class Currency
     COURSE = { # ДАННЫЕ НА 04.09.2023
@@ -9,8 +9,18 @@ module SurepGem3
       'RUB_TO_EUR' => 0.00958,
       'RUB_TO_USD' => 0.01035,
     }
+    attr_reader :sum, :from, :to
+
+    def initialize(sum, from, to)
+      raise ArgumentError, "sum < 0" if sum.negative?
+
+      @sum = sum.to_f
+      @from = from.to_s
+      @to = to.to_s
+    end
 
     def convert(sum, from, to)
+      raise ArgumentError, "sum < 0" if sum.negative?
       course_key = "#{from}_TO_#{to}"
 
       unless COURSE.key?(course_key)
@@ -24,6 +34,7 @@ module SurepGem3
     end
   end
 end
+
 
 
 

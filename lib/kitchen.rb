@@ -4,6 +4,9 @@ module SurepGem3
 
   class Kitchen
 
+    def initialize(values=0)
+      @values = values.to_f
+    end
     def grams_to_kg(grams)
       grams / 1000
     end
