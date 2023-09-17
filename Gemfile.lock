@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    SurepGem3 (0.1)
+    SurepGem3 (0.2)
 
 GEM
   remote: https://rubygems.org/
